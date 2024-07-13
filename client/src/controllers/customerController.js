@@ -1,8 +1,10 @@
+const apiUrl = 'http://localhost:5118/api/DCustomer';
+
 const fetchCustomers = async () => {
     try {
-        const response = await fetch('http://localhost:3001/customers');
+        const response = await fetch(apiUrl);
         const data = await response.json();
-        return data;
+        return data ? data : [];
     } catch (error) {
         console.error('Error fetching customers:', error);
     }
@@ -10,9 +12,9 @@ const fetchCustomers = async () => {
 
 const fetchCustomerById = async (id) => {
     try {
-        const response = await fetch(`http://localhost:3001/customers/${id}`);
+        const response = await fetch(`${apiUrl}/${id}`);
         const data = await response.json();
-        return data[0];
+        return data;
     } catch (error) {
         console.error('Error retrieving customer:', error);
     }
@@ -20,14 +22,14 @@ const fetchCustomerById = async (id) => {
 
 const createCustomer = async (customerData) => {
     try {
-        const response = await fetch('http://localhost:3001/customers', {
+        const response = await fetch(apiUrl, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(customerData)
         });
-        return response;
+        return response ? response : {};
     } catch (error) {
         console.error('Error creating customer:', error);
     }
@@ -35,14 +37,14 @@ const createCustomer = async (customerData) => {
 
 const updateCustomer = async (id, customerData) => {
     try {
-        const response = await fetch(`http://localhost:3001/customers/${id}`, {
+        const response = await fetch(`${apiUrl}/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(customerData)
         });
-        return response;
+        return response ? response : {};
     } catch (error) {
         console.error('Error updating customer:', error);
     }
@@ -50,10 +52,10 @@ const updateCustomer = async (id, customerData) => {
 
 const deleteCustomer = async (id) => {
     try {
-        const response = await fetch(`http://localhost:3001/customers/${id}`, {
+        const response = await fetch(`${apiUrl}/${id}`, {
             method: 'DELETE',
         });
-        return response;
+        return response ? response : {};
     } catch (error) {
         console.error('Error deleting customer:', error);
     }

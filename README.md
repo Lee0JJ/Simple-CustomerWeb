@@ -1,27 +1,31 @@
-## Setup MySQL Workbench
+## Prerequisites
 
-To setup MySQL Workbench, follow these steps:
+Before you begin, ensure you have the following installed:
 
-1. Download and install MySQL Workbench from the official website.
-2. Launch MySQL Workbench.
-3. Connect to your MySQL server using the appropriate credentials.
-4. Create a new database named `customerDB`.
+- [.NET Core SDK](https://dotnet.microsoft.com/download)
+- [Node.js and npm](https://nodejs.org/)
+- [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) (or another supported database)
 
-## Importing the Database
+## Backend Setup
 
-To import the database, follow these steps:
+1. Navigate to the /WebAPI directory: `cd WebAPI`
+2. Restore NuGet packages: `dotnet restore`
+3. Update the appsettings.json file with your database connection string
 
-1. Locate the `customerDatabase.sql` file under the `server` folder.
-2. Open MySQL Workbench and connect to your MySQL server.
-3. Select the `customerDB` database.
-4. Create schema for database
-5. Execute query in the `customerDatabase.sql` file.
+"ConnectionStrings": {
+  "DefaultConnection": "YourConnectionStringHere"
+}
 
-## Installing Dependencies
+4. Apply migrations and update the database: `dotnet ef database update`
+5. Run the backend server: `dotnet run`
 
-To install the dependencies for the client and server, follow these steps:
+## Frontend Setup
 
-1. Open a terminal or command prompt.
-2. Navigate to the project's root directory `cd server` or `cd client`.
-3. Run `npm i` to install the dependencies for both the client and server.
-3. Run `npm start` to start for both the client and server.
+1. Navigate to the react-ui directory: `cd client`
+2. Install npm packages: `npm install`
+3. Start the React development server: `npm start`
+
+## Running the Application
+
+1. The .NET Core API server will be running on https://localhost:5118
+2. The React frontend will be running on http://localhost:3000.

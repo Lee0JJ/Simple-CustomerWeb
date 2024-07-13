@@ -128,3 +128,168 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# .NET Core generated files
+/WebAPI/bin/
+/WebAPI/obj/
+
+# Build directories
+/WebAPI/out/
+/WebAPI/debug/
+/WebAPI/release/
+
+# User-specific files
+/WebAPI/*.rsuser
+/WebAPI/*.suo
+/WebAPI/*.user
+/WebAPI/*.userosscache
+/WebAPI/*.sln.docstates
+
+# Auto-generated files
+/WebAPI/*.pidb
+/WebAPI/*.sln.docstates
+
+# Logs
+/WebAPI/*.log
+/WebAPI/Logs/
+
+# Visual Studio Code settings
+/WebAPI/.vscode/
+
+# Windows image file caches
+/WebAPI/Thumbs.db
+/WebAPI/ehthumbs.db
+
+# Windows thumbnail cache files
+/WebAPI/Thumbs.db
+/WebAPI/ehthumbs_vista.db
+
+# Folder config file
+/WebAPI/Desktop.ini
+
+# Recycle Bin used on file shares
+/WebAPI/$RECYCLE.BIN/
+
+/# SVN directories
+/WebAPI/.svn/
+
+# Node.js
+/WebAPI/node_modules/
+
+/# npm debug log
+/WebAPI/npm-debug.log
+
+# Mac OS generated files
+/WebAPI/.DS_Store
+/WebAPI/.AppleDouble
+/WebAPI/.LSOverride
+
+# Icon must end with two \r
+/WebAPI/Icon\r\r
+
+# Thumbnails
+/WebAPI/._*
+
+# Files that might appear on external disk
+/WebAPI/.Spotlight-V100
+/WebAPI/.Trashes
+
+# Directories potentially created on remote AFP share
+/WebAPI/.AppleDB
+/WebAPI/.AppleDesktop
+/WebAPI/Network Trash Folder
+/WebAPI/Temporary Items
+/WebAPI/.apdisk
+
+# Visual Studio 2019
+/WebAPI/.vs/
+/WebAPI/.vscode/
+
+# Rider
+/WebAPI/.idea/
+
+# ASP.NET Scaffolding
+/WebAPI/ScaffoldingReadMe.txt
+
+# Entity Framework Migrations
+/WebAPI/Migrations/
+
+/# Local history for JetBrains Rider
+/WebAPI/.idea/
+
+/# Rider
+/WebAPI/*.sln.iml
+
+# Resharper
+/WebAPI/_ReSharper*/
+/WebAPI/*.[rR]e[Ss]harper
+/WebAPI/*.DotSettings.user
+/WebAPI/*.DotSettings
+
+# User-specific files
+/WebAPI/*.userprefs
+/WebAPI/*.userosscache
+
+# Rider settings directory
+/WebAPI/.idea/
+
+/# Coverage Reports
+/WebAPI/coverage/
+
+/# Crashlytics (Google crash reporting tool)
+/WebAPI/crashlytics-build.properties
+
+# NCrunch
+/WebAPI/.ncrunchsolution
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+/WebAPI/*.userprefs
+
+# Local History for Eclipse
+/WebAPI/.localhistory/
+
+/# Rider
+/WebAPI/.idea/
+
+/# CodeRush
+/WebAPI/.Coderush/
+
+/# DocFx generated content
+/WebAPI/_docfx_temp/
+/WebAPI/*.docfx
+
+# Visual Studio temp and backup files
+/WebAPI/*.tmp
+/WebAPI/*.bak
+/WebAPI/*.old
+
+# IDE-specific files
+/WebAPI/.idea/
+/WebAPI/*.sln.iml
+/WebAPI/.localhistory
+/WebAPI/.vs/
+WebAPI/.vscode/
+
+# JetBrains Rider
+/WebAPI/.idea/
+/WebAPI/.idea/
+
+/# Rider temp and backup files
+/WebAPI/.idea/
+/WebAPI/*.sln.iml
+/WebAPI/.idea/workspace.xml
+/WebAPI/.idea/tasks.xml
+/WebAPI/.idea/dictionaries
+/WebAPI/.idea/vcs.xml
+/WebAPI/.idea/jsLibraryMappings.xml
+/WebAPI/.idea/modules.xml
+/WebAPI/.idea/libraries
+/WebAPI/.idea/misc.xml
+/WebAPI/.idea/caches
+/WebAPI/.idea/encodings.xml
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+/WebAPI/*.userprefs
+
+# Coverage Reports
+/WebAPI/coverage/
